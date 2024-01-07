@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './section.css';
-import Circles from 'D:/Zeniqx/zeniqx/src/assets/circles.svg';
+import Circles from '../assets/circles.svg';
 import './hooks/useCursor.css'
 import useCursor from './hooks/useCursor';
 import { gsap } from 'gsap';
