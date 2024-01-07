@@ -1,0 +1,37 @@
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fbab7e;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .grow,
+  .grow-small {
+    transform: scale(4);
+    background: white;
+    mix-blend-mode: difference;
+    border: none;
+  }
+  
+  .grow-small {
+    transform: scale(2);
+  }
+
+  @media screen and (max-width:450px){
+    .cursor{
+      display: none;
+    }
+    /* .cursor-scale{
+      display: none;
+
+    }  */
+    .grow-small{
+      display: none;
+      
+    }
+  }

@@ -1,0 +1,209 @@
+@import url(https://db.onlinewebfonts.com/c/7ccc732353a266bee0d99b75cf08e134?family=Helvetica+93+Black+Extended);
+@import url(https://db.onlinewebfonts.com/c/0e6de1ec911a2e267ff136bbdd384a44?family=Helvetica+Neue+Light);
+
+.containerr{
+    display: flex;
+    gap: 10vh;
+    padding-top: 15vh;
+    flex-direction: column;
+}
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    height: 80vh;
+    background-color:#81BC12;
+    overflow: hidden;
+  }
+  
+  .card-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 30vw;
+    height: 80vh;
+    background-color:#000000;
+
+    /* background-color: #ff2950; */
+  }
+  
+  .card-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color:#81BC12;
+    overflow: hidden;
+    height: 80vh;
+    width: 30vw;
+    /* background-color: #bb86fc; */
+  }
+  
+  .card-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    height: 80vh;
+    background-color:#000000;
+    overflow: hidden;
+
+    /* background-color: #ffd334; */
+  }
+  .card-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    background-color:#81BC12;
+    
+    height: 80vh;
+
+    overflow: hidden;
+
+    /* background-color: #ff0266; */
+  }
+  .card-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    height: 80vh;
+    background-color:#000;
+
+    overflow: hidden;
+    /* background-color: #03dac6; */
+  }
+  .card-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    overflow: hidden;
+    height: 80vh;
+    background-color:#81BC12;
+
+    /* background-color: #7619ef; */
+  }
+ .heading {
+    padding-left: 4vw;
+    color: #fdfdfd;
+    font-family: 'Helvetica 93 Black Extended';
+    font-size: 5vmax;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .cardleftinner{
+    display: flex;
+    /* padding-left: 2vw;
+    padding-right: 2vw; */
+    color: #fdfdfd;
+    font-family: 'Helvetica 93 Black Extended';
+    font-size: 2vmax;
+    text-align: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardright{
+    height: 50%;
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 1vh 4vw;
+    color: #ffffff;
+    font-family: 'Helvetica Neue Light';
+    font-size: 1.3vmax;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .cardleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 50%;
+    padding: 4vh 8vw;
+  }
+  
+  @media screen and (max-width:475px) {
+
+    .card-1, .card-2, .card-3, .card-4,.card-5, .card-6, .card-7{
+        height:100%;
+        width: 100%;
+        flex-direction: column;
+        padding: 8vh 0vw;
+        gap: 0vmax;
+        background-color:#81BC12;
+        border-bottom:  0.1vmax solid #000000;
+    }
+    .card-2,.card-4,.card-6{
+      background-color: #000;
+    }
+    .heading{
+        display: flex;
+        /* justify-content: center; */
+        padding-left: 4vw;
+    }
+    .containerr{
+        padding-top: 6vh;
+    }
+    .carddivv{
+      display: flex;
+      flex-direction: row;
+  }
+  .cardsdiv{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      display: block; 
+      pointer-events: none;
+      user-select: none;
+      transition: none;
+      /* transform: none !important; */
+      transform: translateX(0%) translateZ(0px)  !important;
+  }
+  .cardleftinner{
+    display: flex;
+    color: #ffffff;
+    font-size: 4vmax;
+    
+  }
+    
+  .cardleft{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+  }
+  .carddivv{
+    position: static !important;
+
+  }
+  .sectioonn{
+    height: auto !important;
+  }
+  .cardright{
+    font-size: 2.5vmax;
+    padding: 2vh 10vw;
+  }
+}

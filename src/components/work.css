@@ -1,0 +1,148 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    color: #000;
+    padding: 10vh 2vw;
+    margin-top: 5vh;
+  }
+  
+  .heading {
+    color: #fdfdfd;
+    font-family: 'Helvetica 93 Black Extended';
+    font-size: 5vmax;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4vh 3vw;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+    width: 41.9vw;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-shrink: 0;
+    background: linear-gradient(#000, #000) padding-box,
+      linear-gradient(98deg, #5A9D72 1.01%, #D7D6C2 35.37%, #9A9641 67.65%) border-box;
+    border-radius: 3vmax;
+    border: 0.3vmax solid transparent;
+    overflow: hidden;
+  }
+
+  .cardlower{
+    aspect-ratio: 321 / 151;
+    width: 100%;
+    /* object-fit: contain; */
+    overflow: hidden;
+    margin-bottom: 0vh;
+    height: 85%;
+    /* border-radius:  0vmax 0vmax 2.5vmax 2.5vmax; */
+  }
+  .ind {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  
+  }
+ 
+  .indina {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #97ad9c;
+    text-align: center;
+    font-family: "Neue Helvetica-ExtendedThin", Helvetica  ;
+    font-size: 3.5vmax;
+    font-style: light;
+    font-weight: 100;
+    line-height: normal;
+    /* margin-bottom: 1vh; */
+    justify-content: start;
+  }
+  
+  .list {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2vh 1vw;
+    gap: 0.5vmax;
+    width: 50%;
+    color: #97ad9c;
+    text-align: right;
+    font-family: 'Helvetica Neue Light';
+    font-size: 1.5vmax;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .cardupper{
+    display: flex;
+    justify-content: space-between;    
+    height: 25%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+  }
+
+
+.ultimate{
+  background: linear-gradient(#000, #000) padding-box,
+  linear-gradient(98deg, #0A5BAB 8.01%, #28292A 90.37%) border-box;
+}
+.ultimatetext{
+  color: #0A5BAB;
+}
+.learnhattan{
+  background: linear-gradient(#000, #000) padding-box,
+  linear-gradient(98deg, #6D4AF9 1.01%, #5B547F 35.37%, #3D075E 67.65%) border-box;
+}
+.learnhattantext{
+  color: #631DAA;
+}
+.learnhattan .list{
+  color: #631DAA;
+
+}
+.ultimate .list{
+  color: #0A5BAB;
+
+}
+@media screen and (max-width:478px) {
+  .learnhattantext{
+    font-size: 3.5vmax;
+  }
+  .ultimatetext{
+    font-size: 3.5vmax;
+
+  }
+  .indina{
+    font-size: 3.5vmax;
+
+  }
+  .list{
+    gap:1vw;
+    padding: 1vh 2vw;
+    font-size: 1.5vmax;
+  }
+  .cards{
+    flex-direction: row;
+    
+  }
+  .card{
+    width: 74vw;
+
+  }
+  
+}
