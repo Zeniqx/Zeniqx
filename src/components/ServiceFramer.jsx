@@ -4,6 +4,13 @@ import './servicesframer.css'
 import './hooks/useCursor.css'
 import useCursor from './hooks/useCursor';
 import { gsap } from 'gsap';
+import Web from "../assets/webservice.jpg"
+import UIUX from "../assets/uiuxservice.jpg"
+import Brand from "../assets/branding.jpg"
+import SEO from "../assets/seoservice4.jpg"
+import Content from "../assets/content.jpg"
+import SMM from "../assets/smm.jpg"
+import EM from "../assets/emailmarketing.jpg"
 
 const Example = () => {
     const cursorRef = useCursor();
@@ -65,42 +72,49 @@ const HorizontalScrollCarousel = () => {
   const cards = [
     {
       id: 1,
+      cardimage:Web,
       title: "Website Development",
       description: "Get a website that not only looks good but works great too. We build websites that are easy to use, ensuring your visitors have a seamless experience and turn into happy customers.",
       bgColor: "#7619EF",
     },
     {
       id: 2,
+      cardimage:UIUX,
       title: "UI/UX Design",
       description: "Make your virtual office look as good as your business. Our web design makes sure your website is not just eye-catching but also easy to navigate, creating a positive impression that lasts.",
       bgColor: "#333BF4",
     },
     {
       id: 3,
+      cardimage:SEO,
       title: "SEO",
       description: "Be found when people are searching for what you offer. Our SEO magic helps your business pop up on search engines, bringing in more visitors and potential customers.",
       bgColor: "#EE2AC3",
     },
     {
       id: 4,
+      cardimage:EM,
       title: "Email Marketing",
       description: "Say hello directly to your audience's inbox. Our email campaigns are crafted to keep your customers engaged, informed, and excited about what you have to offer.",
       bgColor: "#D9D9D9",
     },
     {
       id: 5,
+      cardimage:Brand,
       title: "Branding",
       description: "Tell a story with your brand. We help you create a consistent and memorable brand image that stands out, building trust and making your business unforgettable.",
       bgColor: "#D9D9D9",
     },
     {
       id: 6,
+      cardimage:Content,
       title: "Content Marketing",
       description: "Speak your audience's language. From blog posts to videos, we create content that not only shows what you know but also connects with your customers, making your brand a go-to resource in your industry.",
       bgColor: "#D9D9D9",
     },
     {
       id: 7,
+      cardimage:SMM,
       title: "SMM",
       description: "Turn your social media into a conversation. We help you connect with your audience, share your story, and build a community around your brand through smart and friendly social media strategies.",
       bgColor: "#D9D9D9",
@@ -123,9 +137,14 @@ const HorizontalScrollCarousel = () => {
 const Card = ({ card }) => {
   return (
   
-    <div key={card.id} className= {`card-${card.id}`}>
+    <div key={card.id} className= {` servicecard card-${card.id}`}>
       <div className={`cardleft card${card.id}left`}>
+        <div className="imagecontainer">
+        <img className="cardimagec" src={card.cardimage} />
+        </div>
+
         <span className={`cardleftinner card${card.id}lefttext`}>
+
           {card.title}
         </span>
       </div>

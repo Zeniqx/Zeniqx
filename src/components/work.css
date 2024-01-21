@@ -8,11 +8,11 @@
   }
   
   .heading {
-    color: #fdfdfd;
-    font-family: 'Helvetica 93 Black Extended';
-    font-size: 5vmax;
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 4vmax;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     line-height: normal;
   }
   
@@ -32,7 +32,7 @@
     justify-content: space-between;
     /* align-items: center; */
     flex-shrink: 0;
-    background: linear-gradient(#000, #000) padding-box,
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
       linear-gradient(98deg, #5A9D72 1.01%, #D7D6C2 35.37%, #9A9641 67.65%) border-box;
     border-radius: 3vmax;
     border: 0.3vmax solid transparent;
@@ -98,14 +98,14 @@
 
 
 .ultimate{
-  background: linear-gradient(#000, #000) padding-box,
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
   linear-gradient(98deg, #0A5BAB 8.01%, #28292A 90.37%) border-box;
 }
 .ultimatetext{
   color: #0A5BAB;
 }
 .learnhattan{
-  background: linear-gradient(#000, #000) padding-box,
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
   linear-gradient(98deg, #6D4AF9 1.01%, #5B547F 35.37%, #3D075E 67.65%) border-box;
 }
 .learnhattantext{

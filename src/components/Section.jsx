@@ -1,9 +1,17 @@
 import React, { useEffect, useRef } from 'react'
 import './section.css';
-import Circles from 'D:/Zeniqx/zeniqx/src/assets/circles.svg';
+import Circles from '../assets/circles.svg';
 import './hooks/useCursor.css'
 import useCursor from './hooks/useCursor';
 import { gsap } from 'gsap';
+import why1 from '../assets/why1.jpg';
+import why2 from '../assets/why2.svg';
+import why3 from '../assets/why3.jpg';
+import why4 from '../assets/why4.svg';
+import why5 from '../assets/why5.jpeg';
+import why6 from '../assets/why6.jpg';
+import why7 from '../assets/why7.jpg';
+
 function Section() {
   const cursorRef = useCursor();
   // useEffect(() => {
@@ -61,7 +69,20 @@ function Section() {
       </span>
       <div className='abouutt'>
         <div className='imag'>
-        <img src={Circles} className="image" />
+
+        {/* <img src={Circles} className="image" /> */}
+        {/* <img src={why1} className="image" /> */}
+        {/* <img src={why2} className="image" /> */}
+        {/* <img src={why3} className="image" /> */}
+        {/* <img src={why4} className="image" /> */}
+        {/* <img src={why5} className="image" /> */}
+        {/* <img src={why6} className="image" /> */}
+        <img src={why7} className="image" />
+
+
+
+
+
         </div>
 
         <div className='ab '>

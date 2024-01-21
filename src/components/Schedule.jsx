@@ -48,7 +48,7 @@ function Schedule() {
   return (
     <div ref={sectionRef}  id="schedule" className='schedule' >
 
-        <span className='workkk cursor-scale '> <span className="worktexttt">Work </span>With Us</span>
+        <span className='workkk cursor-scale '> <span className="worktexttt">Work </span> With Us</span>
         <span className='workkksubtext'>Feel free to schedule a call with us at your convenience, and our team will reach out to you soon.
 </span>
         <div className='cta ' onClick={handleClick}>

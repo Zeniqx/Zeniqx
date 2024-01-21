@@ -28,7 +28,7 @@
     overflow: hidden;
     width: 30vw;
     height: 80vh;
-    background-color:#000000;
+    background-color:#ffffff;
 
     /* background-color: #ff2950; */
   }
@@ -54,10 +54,13 @@
     align-items: center;
     width: 30vw;
     height: 80vh;
-    background-color:#000000;
+    background-color:#ffffff;
     overflow: hidden;
-
+    
     /* background-color: #ffd334; */
+  }
+  .servicecard{
+    gap:2vmax;
   }
   .card-5 {
     display: flex;
@@ -67,9 +70,7 @@
     align-items: center;
     width: 30vw;
     background-color:#81BC12;
-    
     height: 80vh;
-
     overflow: hidden;
 
     /* background-color: #ff0266; */
@@ -82,7 +83,7 @@
     align-items: center;
     width: 30vw;
     height: 80vh;
-    background-color:#000;
+    background-color:#ffffff;
 
     overflow: hidden;
     /* background-color: #03dac6; */
@@ -102,7 +103,7 @@
   }
  .heading {
     padding-left: 4vw;
-    color: #fdfdfd;
+    color: #000000;
     font-family: 'Helvetica 93 Black Extended';
     font-size: 5vmax;
     font-style: normal;
@@ -113,7 +114,8 @@
     display: flex;
     /* padding-left: 2vw;
     padding-right: 2vw; */
-    color: #fdfdfd;
+    color: #81BC12;
+    width: 70%;
     font-family: 'Helvetica 93 Black Extended';
     font-size: 2vmax;
     text-align: center;
@@ -131,7 +133,7 @@
     /* justify-content: center; */
     /* align-items: center; */
     padding: 1vh 4vw;
-    color: #ffffff;
+    color: #81BC12;
     font-family: 'Helvetica Neue Light';
     font-size: 1.3vmax;
     font-weight: 300;
@@ -141,11 +143,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40%;
-    width: 50%;
-    padding: 4vh 8vw;
+    height: 70%;
+    width: 80%;
+    margin-top: 2vh;
+    gap:3vmax;
+    /* padding: 4vh 8vw; */
+    flex-direction: column;
+  }
+  .cardimagec{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 1.5vmax;
+  }
+  .imagecontainer{
+    width:20vw;
+    height:30vh;
+    aspect-ratio: 100 / 80;
+    overflow: hidden;
   }
   
+  .card-1 .cardleftinner,.card-3 .cardleftinner,.card-5 .cardleftinner,.card-7 .cardleftinner{
+    color: #ffffff;
+  }
+  
+  .card-1 .cardright,.card-3 .cardright,.card-5 .cardright,.card-7 .cardright{
+    color: #ffffff;
+  }
   @media screen and (max-width:475px) {
 
     .card-1, .card-2, .card-3, .card-4,.card-5, .card-6, .card-7{
@@ -155,10 +179,22 @@
         padding: 8vh 0vw;
         gap: 0vmax;
         background-color:#81BC12;
-        border-bottom:  0.1vmax solid #000000;
+        
     }
     .card-2,.card-4,.card-6{
-      background-color: #000;
+      background-color: #ffffff;
+    }
+    .cardimagec{
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 1.5vmax;
+    }
+    .imagecontainer{
+      width:50vw;
+      height:30vh;
+      aspect-ratio: 100 / 80;
+      overflow: hidden;
     }
     .heading{
         display: flex;
@@ -185,7 +221,7 @@
   }
   .cardleftinner{
     display: flex;
-    color: #ffffff;
+    color: #81BC12;
     font-size: 4vmax;
     
   }

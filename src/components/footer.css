@@ -29,15 +29,18 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
   }
   .listnav{
-    color: #ffff;
-    font-family: 'Helvetica Neue Light';
+    color: #000;
+    font-family: 'Poppins';
     font-size: 1.2vmax;
     font-weight: 100;
     line-height: normal;
     letter-spacing: 0.14vw;
+    cursor: pointer;
   }
+  
   .navlinkcontain{
     display: flex;
     gap: 2vmax;
@@ -53,10 +56,12 @@
     gap:1vmax;
     padding: 2vh 2vw;
     cursor: pointer;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .allright{
-    color: #ffff;
-    font-family: 'Helvetica Neue Light';
+    color: #000;
+    font-family: 'Poppins';
     font-size: 1vmax;
     font-weight: 100;
     line-height: normal;
@@ -65,13 +70,21 @@
 
   }
   .icons{
-    width: 4vmax;
-    height: 4vmax;
+    width: 3vmax;
+    height: 3vmax;
 
   }
   @media screen and (max-width:475px) {
     .listnav{
         font-size: 1.5vmax;
     }
+    .footerlinks{
+      justify-content: center
+    }
 
+  }
+  .mobilenumber{
+    font-family: "Poppins";
+    font-size: 1.2vmax;
+    font-style: normal;
   }

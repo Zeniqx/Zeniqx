@@ -5,16 +5,16 @@
     display: flex;
     flex-direction: column;
     gap:10vh;
-    color: #000;
+    color: #ffffff;
     padding:10vh 4vw;
     margin-top: 5vh;
 }
 .why{
-    color: #FDFDFD;
-    font-family: 'Helvetica 93 Black Extended';
-    font-size: 5vmax;
+    color: #000000;
+    font-family: 'Poppins';
+    font-size: 4vmax;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     line-height: normal;
 }
 .abouutt{
@@ -32,21 +32,21 @@
 
 }
 .abb{
-    color: #FDFDFD;
+    color: rgb(0, 0, 0);
     font-family: 'Helvetica Neue Light';
     font-size: 2vmax;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
 
 }
 .imag{
     /* justify-content: center; */
     display: flex;
     justify-content: flex-start;
-    width: 30%;
-    object-fit: contain;
-    aspect-ratio:  229 / 184;
+    width: 40%;
+    height: 80%;
+    aspect-ratio:  90 / 70;
 }
 .imag img{
     width: 100%;
@@ -55,19 +55,19 @@
 }
 
 .delivering{
-    background: var(--craft-gra, linear-gradient(98deg, #6D4AF9 1.01%, #A632CE 35.37%, #F81DC8 67.65%));
+    background: #81BC12;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 .abbb{
-    color: #FDFDFD;
+    color: #000000;
     font-family: 'Helvetica Neue Light';
     font-size: 1.3vmax;
     font-weight: 300;
     line-height: normal;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
 
 }
 .image{

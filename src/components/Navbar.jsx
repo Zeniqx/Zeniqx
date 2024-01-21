@@ -3,7 +3,7 @@ import './Navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import './hooks/useCursor.css'
 import useCursor from './hooks/useCursor';
-import zeniqxlogo from '../assets/Zeniqx_white-05.svg'
+import zeniqxlogo from '../assets/Zeniqx-04.svg'
 <style>
 {/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */}
 </style>
@@ -35,10 +35,10 @@ function Navbar() {
   return (
     <div className='Navbar'>
         <div className='logo'>
-          <img className="svg-icon" src={zeniqxlogo}/>
+          <img onClick={() => scrollToSection('hero')} className="svg-icon" src={zeniqxlogo}/>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <MenuIcon style={{ color: "white" }}/>
+          <MenuIcon style={{ color: "black" }}/>
         </div>
         <div className={`navbaritems ${showNavbar && 'active'}`}>
             <ul>

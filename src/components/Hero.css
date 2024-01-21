@@ -1,39 +1,58 @@
 @import url(https://db.onlinewebfonts.com/c/7ccc732353a266bee0d99b75cf08e134?family=Helvetica+93+Black+Extended);
 @import url(https://db.onlinewebfonts.com/c/0e6de1ec911a2e267ff136bbdd384a44?family=Helvetica+Neue+Light);
+
+
 .hero {
-    background-color: #000;
     display: flex;
     flex-direction: row;
     color: aqua;
     overflow: hidden;
-    margin-top:3vh ;
-    margin-left:4vw;
+    justify-content: space-between;
+    margin-top: 3vh;
+    margin-left: 4vw;
     margin-right: 4vw;
-
+    margin-bottom: 7vh;
   }
+
 .headin{
     width: 60vmax;
 }
 .animatedtext{
-    background: var(--craft-gra, linear-gradient(98deg, #6D4AF9 1.01%, #A632CE 35.37%, #F81DC8 67.65%));
+    /* background: var(--craft-gra, linear-gradient(98deg, #6D4AF9 1.01%, #A632CE 35.37%, #F81DC8 67.65%));
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Helvetica 93 Black Extended';
-    font-size: 8vmax;
+    -webkit-text-fill-color: transparent; */
+    color: #000000;
+    font-family: 'Poppins';
+    font-size: 4vmax;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .content{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     margin-bottom: 6vh;
     position: relative;
     z-index: 1;
 
+
 }
+
 .animation{
+    /* width: 40%;
+    height: 60%; */
+    display: flex;
+    width: 60%;
+    object-fit:fill;
+    aspect-ratio: 90/50;
+    overflow: visible;
+
+}
+
+ /* .animation{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,13 +74,12 @@ canvas{
     object-fit: contain;
     overflow: visible;
     margin-top: 0;
-}
+}  */
 .presence{
-    color: #ffffff;
+    color: #000000;
     /* font-family: HelveticaNeue LT 93 BlackEx;body  */
     font-family: 'Helvetica 93 Black Extended';
         font-weight: 300;
-    
     font-size: 8vmax;
     font-style: Regular;
     font-weight: 700;
@@ -69,13 +87,13 @@ canvas{
 }
 
 .subheadinggg{
-    color: #ffffff;
+    color: #000000;
     font-family: 'Helvetica Neue Light';
     font-size: 2vmax;
     line-height: normal;
     letter-spacing: 0.04em;
-
 }
+
 .ctaa{
     padding: 2vh 2vw;
     display: flex;
@@ -85,13 +103,13 @@ canvas{
     width: 15vmax;
     height: 3vmax;
     gap: 1vmax;
-    /* border-radius: 372px; */
     border-radius: 2vmax;
-    background: linear-gradient(93deg, #2C34FF 4.64%, rgba(147, 48, 226, 0.95) 55.05%, rgba(255, 44, 196, 0.89) 106.51%);
-    box-shadow: 0px 0.637px 1.401px 0px rgba(142, 30, 255, 0.01), 0px 1.932px 4.25px 0px rgba(183, 30, 255, 0.04), 0px 5.106px 11.233px 0px rgba(116, 30, 255, 0.09), 0px 16px 35.2px 0px rgba(156, 30, 255, 0.30);
+    background-color: #81BC12;
+    cursor: pointer;
+  
 }
 .ctaaa{
-    color: #FFF;
+    color: #ffffff;
     font-family: 'Helvetica Neue';
     font-size: 1.5vmax;
     font-style: light;
@@ -156,3 +174,120 @@ canvas{
     
 }
 
+/* .hwrap {
+    background-color:#e0e0e0;
+    display:flex;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+/* (A) FORCE ALL ITEMS INTO SINGLE ROW */
+/* .hmove {
+    display: flex;
+    gap: 10vw;
+    animation: tickerh linear 25s infinite;
+  }
+  
+  .hitem {
+
+    font-family: 'Poppins';
+    font-size: 2.5vmax;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    color: #000000;
+    flex-shrink: 0;
+    overflow: hidden; 
+    
+  } */
+  /* tickerh */
+  
+  /* (B) MOVE ITEMS FROM RIGHT TO LEFT */
+  /* first item = 0, fourth item = -300% */
+  /* @keyframes tickerh {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  
+  .hmove {
+    animation: tickerh linear 25s infinite;
+  }
+  
+  .hmove:hover {
+    animation-play-state: paused;
+  } */ 
+
+ .marqueetext{
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-size: 2.1vmax;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    /* font-style: bold; */
+ }
+  .marquee {
+    background-color: #81BC12;
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    /* gap: var(--gap); */
+    gap:4vmax;
+
+
+  }
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    /* gap: var(--gap); */
+    gap:4vmax;
+    height: 4vh;
+    min-width: 100%;
+    animation: scroll 10s linear infinite;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    align-items: center;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  
+  /* Pause animation when reduced-motion is set */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee__content {
+      animation-play-state: paused !important;
+    }
+  }  
+/* Pause on hover */
+.marquee--hover-pause:hover .marquee__content {
+    animation-play-state: paused;
+  }
+  @keyframes scroll-abs {
+    from {
+      transform: translateX(calc(100% + var(--gap)));
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+.starr{
+    width: 1.62vw;
+    height: 3.4vh;
+}
