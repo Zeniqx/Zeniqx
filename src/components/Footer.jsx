@@ -17,7 +17,9 @@ function Footer() {
   const handleLinkedinClick = () => {
     window.open('https://www.linkedin.com/company/zeniqx', '_blank'); // Replace with your LinkedIn URL
   };
-
+  const handleFacebookClick = () => {
+    window.open('https://www.facebook.com/profile.php?id=61554907876543', '_blank'); // Replace with your LinkedIn URL
+  };
   const handleMailClick = () => {
     window.location.href = 'mailto:contact@zeniqx.com'; // Replace with your email address
   };
@@ -55,7 +57,7 @@ function Footer() {
             <img className='icons' src={Call} alt='Call' onClick={handleCallClick}/>
             <img className='icons' src={Mail} alt='Mail' onClick={handleMailClick}/>
             <img className='icons' src={Insta} alt='insta'  onClick={handleInstaClick}/>
-            <img className='icons' src={FB} alt='Facebook' onClick={handleInstaClick}/>
+            <img className='icons' src={FB} alt='Facebook' onClick={handleFacebookClick}/>
             <img className='icons' src={Linkedin} alt='Linkedin'  onClick={handleLinkedinClick}/>
             {/* <span className='mobilenumber'>+91 888 420 9113</span> */}
         </div>
