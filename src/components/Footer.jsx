@@ -65,7 +65,7 @@ function Footer() {
       </div>
         <hr className='linee'/>
         <div className='allright'>
-        All rights reserved: 2024
+        All rights reserved: 2023
         </div>
     </div>
   )
