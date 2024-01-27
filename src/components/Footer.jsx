@@ -53,8 +53,9 @@ function Footer() {
         </div>
         <div className="iconlink">
             {/* <img className='icons' src={Insta} alt='insta' onClick={handleInstaClick}/>
-            <img className='icons' src={Linkedin} alt='insta' onClick={handleLinkedinClick}/> */}
+            <img className='icons' src={Linkedin} alt='insta' onClick={handleLinkedinClick}/>
             <img className='icons' src={Call} alt='Call' onClick={handleCallClick}/>
+             */}
             <img className='icons' src={Mail} alt='Mail' onClick={handleMailClick}/>
             <img className='icons' src={Insta} alt='insta'  onClick={handleInstaClick}/>
             <img className='icons' src={FB} alt='Facebook' onClick={handleFacebookClick}/>
@@ -64,7 +65,7 @@ function Footer() {
       </div>
         <hr className='linee'/>
         <div className='allright'>
-        All rights reserved: 2024
+        All rights reserved: 2023
         </div>
     </div>
   )

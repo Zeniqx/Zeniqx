@@ -11,7 +11,7 @@ import SEO from "../assets/seoservice4.jpg"
 import Content from "../assets/content.jpg"
 import SMM from "../assets/smm.jpg"
 import EM from "../assets/emailmarketing.jpg"
-
+import appicon from "../assets/App.jpg"
 const Example = () => {
     const cursorRef = useCursor();
     const sectionRef = useRef(null);
@@ -79,41 +79,49 @@ const HorizontalScrollCarousel = () => {
     },
     {
       id: 2,
-      cardimage:UIUX,
-      title: "UI/UX Design",
-      description: "Make your virtual office look as good as your business. Our web design makes sure your website is not just eye-catching but also easy to navigate, creating a positive impression that lasts.",
+      cardimage:appicon,
+      title: "App Development",
+      description: "Transform your ideas into reality with our expert app development services. We craft seamless and user-friendly applications that redefine digital experiences. Elevate your business with cutting-edge technology today.",
       bgColor: "#333BF4",
     },
     {
       id: 3,
+      cardimage:UIUX,
+      title: "UI/UX Design",
+      description: "Make your virtual office look as good as your business. Our web design makes sure your website is not just eye-catching but also easy to navigate, creating a positive impression that lasts.",
+      bgColor: "#333BF4",
+
+    },
+    {
+      id: 4,
       cardimage:SEO,
       title: "SEO",
       description: "Be found when people are searching for what you offer. Our SEO magic helps your business pop up on search engines, bringing in more visitors and potential customers.",
       bgColor: "#EE2AC3",
     },
     {
-      id: 4,
+      id: 5,
       cardimage:EM,
       title: "Email Marketing",
       description: "Say hello directly to your audience's inbox. Our email campaigns are crafted to keep your customers engaged, informed, and excited about what you have to offer.",
       bgColor: "#D9D9D9",
     },
     {
-      id: 5,
+      id: 6,
       cardimage:Brand,
       title: "Branding",
       description: "Tell a story with your brand. We help you create a consistent and memorable brand image that stands out, building trust and making your business unforgettable.",
       bgColor: "#D9D9D9",
     },
     {
-      id: 6,
+      id: 7,
       cardimage:Content,
       title: "Content Marketing",
       description: "Speak your audience's language. From blog posts to videos, we create content that not only shows what you know but also connects with your customers, making your brand a go-to resource in your industry.",
       bgColor: "#D9D9D9",
     },
     {
-      id: 7,
+      id: 8,
       cardimage:SMM,
       title: "SMM",
       description: "Turn your social media into a conversation. We help you connect with your audience, share your story, and build a community around your brand through smart and friendly social media strategies.",

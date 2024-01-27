@@ -101,6 +101,19 @@
 
     /* background-color: #7619ef; */
   }
+  .card-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    height: 80vh;
+    background-color:#ffffff;
+
+    overflow: hidden;
+    /* background-color: #03dac6; */
+  }
  .heading {
     padding-left: 4vw;
     color: #000000;
@@ -172,7 +185,7 @@
   }
   @media screen and (max-width:475px) {
 
-    .card-1, .card-2, .card-3, .card-4,.card-5, .card-6, .card-7{
+    .card-1, .card-2, .card-3, .card-4,.card-5, .card-6, .card-7,.card-8{
         height:100%;
         width: 100%;
         flex-direction: column;
@@ -181,7 +194,7 @@
         background-color:#81BC12;
         
     }
-    .card-2,.card-4,.card-6{
+    .card-2,.card-4,.card-6,.card-8{
       background-color: #ffffff;
     }
     .cardimagec{
