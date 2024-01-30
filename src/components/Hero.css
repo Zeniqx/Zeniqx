@@ -254,7 +254,7 @@ canvas{
     gap:4vmax;
     height: 4vh;
     min-width: 100%;
-    animation: scroll 10s linear infinite;
+    animation: scroll 12s linear infinite;
     padding-top: 1vh;
     padding-bottom: 1vh;
     align-items: center;
@@ -290,4 +290,11 @@ canvas{
 .starr{
     width: 1.62vw;
     height: 3.4vh;
+}
+
+/* Exclude hover pause on screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .marquee--hover-pause:hover .marquee__content {
+      animation-play-state: running !important;
+  }
 }
