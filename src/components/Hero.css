@@ -242,7 +242,7 @@ canvas{
     overflow: hidden;
     user-select: none;
     /* gap: var(--gap); */
-    gap:4vmax;
+    gap:2vmax;
 
 
   }

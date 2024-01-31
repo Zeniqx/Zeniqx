@@ -107,7 +107,6 @@ function Hero() {
       <li className='marqueetext'>SMO</li>
       <li className='marqueetext'><img className='starr' src={Star}/></li>
     </ul>
-
     <ul aria-hidden="true" className="marquee__content">
       <li className='marqueetext'>Website Development</li>
       <li className='marqueetext'><img className='starr' src={Star}/></li>
